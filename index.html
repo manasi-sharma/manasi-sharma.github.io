@@ -34,7 +34,8 @@
                 <!-- I am also very interested in the applications of perception-based systems and AI to a variety of scenarios, from Astronomy to Autonomous Systems. -->
             </p>
             <p>
-                I graduated in 2021 from Columbia University with a Bachelor's degree in Computer Science and Physics. As an undergrad, I was supervised by <a href="https://www.cs.columbia.edu/~djhsu/"> Prof. Daniel Hsu</a> and <a href="https://datascience.columbia.edu/people/zoltan-haiman/"> Prof. Zoltan Haiman</a> on interpreting astrophysical deep learning models for weak lensing using an array of saliency map methods. I started off my undergraduate program with a broad interest in computational physics and first pursued the direction of AI at Caltech in 2019, under <a href="https://sites.astro.caltech.edu/~mansi/"> Prof. Mansi Kasliwal </a> in which I developed a real/bogus image astrophysical source classifier for the IR-Gattini telescope that performed so well that it was permanently included in the telescope's data processing pipeline.
+                I graduated in 2021 from Columbia University with a Bachelor's degree in Computer Science and Physics. As an undergrad, I was supervised by <a href="https://www.cs.columbia.edu/~djhsu/"> Prof. Daniel Hsu</a> and <a href="https://datascience.columbia.edu/people/zoltan-haiman/"> Prof. Zoltan Haiman</a> on interpreting astrophysical deep learning models for weak lensing using an array of saliency map methods. I started off my undergraduate program with a broad interest in computational physics and first pursued the direction of AI at Caltech in 2019, under <a href="https://sites.astro.caltech.edu/~mansi/"> Prof. Mansi Kasliwal </a> in which I developed a real/bogus image astrophysical source classifier for the IR-Gattini telescope that performed so well that it was permanently included in the telescope's data processing pipeline. As I entered graduate school, dissatisfied with the relatively limited impact astrophysics can have on current-life and real-world affairs, my interest in AI broadened to 
+                include more real-world applications that had a greater focus on human and human-computer interaction, such as robotics and AV. I am now looking for full-time roles (starting 2023) and am very excited to learn about opportunities for the application of deep-learning and/or perception-based systems to a variety of scenarios!
          </p>
 
               <!-- Contact details -->
@@ -68,32 +69,41 @@
                         <ul id="news">
                             <head>
                               <h3>Nissan-Renault-Mitsubishi: Alliance Innovation Laboratory <a href="https://www.ail-sv.com/"> (AIL-SV) </a> </h3>
-                              <h5>[June 2022 -- present]</h5>
+                              <h5>[June 2022 -- Sep 2022]</h5>
                             </head>
-                            <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using a supervised learning algorithm based on Simple View. </li>
+                            <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using the 'SimpleView' supervised learning algorithm, which projects a 3D point-cloud onto the 6 2D frames and passes it through a CNN (ResNet backbone). </li>
                             <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
+                            <li> Experimented with a number of architechtures including Graph-based methods like Grid-GCN and point-wise MLP methods like PointNet++, finally settling on the lightweight convolution based method SimpleView. </li>
+                            <li> LiDAR point-cloud classification is exceedingly difficult and I encountered numerous challenges-- I was finally able to improve model performance and speed by sparisfying the network, using saliency-based weight-freezing and training on hard-negative samples. </li>
                             <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                            <li> [Video will be linked here at the conclusion of the internship]. </li>
-                            <li> Extension: platform for occlusion of any point cloud / freezing of weights based on saliency / object orientation detection. </li>
+                            <li> Video for car classification linked <a href="demot94.mp4">here</a>. </li>
                             
                             <head>
                               <h3>Stanford University <a href="https://svl.stanford.edu/"> Stanford Vision Laboratory </a> </h3>
                               <h5>[Oct 2021 -- present]</h5>
                             </head>
-                            <li>  Collecting, annotating (using GPT-3), and verifying Virtual Reality demos, to simulate 500+ household activities as part of the iGibson and the
-                              BEHAVIOR challenge projects. The goal is to create a curated benchmark dataset, analogous to ImageNet, to support 
-                              research in large-scale training of robotic agents. </li>
+                            <b> BEHAVIOR Project:</b>
+                            <li> Led the development of the Knowledgebase for iGibson and BEHAVIOR-1K, an ImageNet-scale robotic simulation benchmark with a specifc-focus on human-relevant design. Paper accepted to the Conference of Robotics and Learning '22. </li>
+                            <li> Mobilized ~20 crowd-workers to categorize ~5000 "how-to" articles and used zero-shot Natural Language Processing techniques with GPT-3 to annotate the Virtual Reality videos and generate >97% quality activity definitions in a predicate logic-based language. </li>
+                            <b> ADDA (Attention-driven data augmentation):</b>
+                            <li> Oversaw 5 person team project on 'Modulated Attention Dropout' technique to allow for better generalization of RL policies through task-importance aware dataset augmentation. Results showed a 2% increase on baseline Behavioral Cloning results. </li>
                             
                             <head>
-                              <h3>Nissan-Renault-Mitsubishi: Alliance Innovation Laboratory <a href="https://www.ail-sv.com/"> (AIL-SV) </a> </h3>
-                              <h5>[June 2022 -- present]</h5>
+                              <h3>Columbia University, Data Science Institute</a> </h3>
+                              <h5>[Sep 2019 -- June 2021]</h5>
                             </head>
-                            <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using a supervised learning algorithm based on Simple View. </li>
-                            <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
-                            <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                            <li> [Video will be linked here at the conclusion of the internship]. </li>
-                            <li> Extension: platform for occlusion of any point cloud / freezing of weights based on saliency / object orientation detection. </li>
-                        </ul>
+                            <li> Under the guidance of Prof.'s Daniel Hsu and Zoltan Haiman, worked on targeting the "explainability" & trustworthiness of neural networks in the more traditional field of Astronomy. </li>
+                            <li> Discovered that 89% of the output of a popular neural network that uses gravitational lensing maps to predict cosmological parameters (omega_m and sigma_8) was counterintuitively attributable to negative image regions (voids, black holes, etc.) as opposed to the bright image regions (stars, galaxies, etc.). Published results in APS Physical Review '20. </li>
+                            <li> Also ran sanity checks on a number of popular saliency methods and found that gradient-based methods (eg. Grad-CAM / Input x Gradients, etc.) were most robust to model parameters. </li>
+
+                            <head>
+                              <h3>California Institute of Technology, Division of Physics, Mathematics and Astronomy</a> </h3>
+                              <h5>[Jun 2019 -- Aug 2019]</h5>
+                            </head>
+                            <li> Under the guidance of Prof. Mansi Kasliwal at Caltech, pioneered the development of a flagship CNN-based real/bogus image classification system for Caltech's Gattini-IR Telescope using TensorFlow (link), which achieved ~97.5% accuracy on thousands of cosmic transient sources, and published results in PASP '19. </li>
+                            <li> The model worked so well that it was deployed the model in the Telescope's data processing pipeline (still active), replacing the manual classification process. </li>
+                            <li> I also used the results of the model to identify high-confidence transient sources that I performed optical followup on by operating the 200-inch telescope at the Palomar Observatory in Southern California. </li>
+                          </ul>
                     </p>
                 </td>
             </tr>
