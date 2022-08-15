@@ -111,7 +111,7 @@
                               <h5>[Jun 2019 -- Aug 2019]</h5>
                             </head>
 
-                            <li> Under the guidance of Prof. Mansi Kasliwal at Caltech, pioneered the development of a flagship CNN-based real/bogus image classification system for Caltech's Gattini-IR Telescope using TensorFlow (link), which achieved ~97.5% accuracy on thousands of cosmic transient sources, and published results in PASP '19. </li>
+                            <li> Under the guidance of Prof. Mansi Kasliwal at Caltech, pioneered the development of a flagship CNN-based real/bogus image classification system for Caltech's Gattini-IR Telescope using TensorFlow (link), which achieved ~97.5% accuracy on thousands of cosmic transient sources, and published results in PASP '20. </li>
                             <li> The model worked so well that it was deployed the model in the Telescope's data processing pipeline (still active), replacing the manual classification process. </li>
                             <li> I also used the results of the model to identify high-confidence transient sources that I performed optical followup on by operating the 200-inch telescope at the Palomar Observatory in Southern California. </li>
                           
@@ -150,15 +150,59 @@
                <papertitle>BEHAVIOR-1K: A Benchmark for Embodied AI with 1,000 Everyday Activities and Realistic Simulation</papertitle>
 
             <br>
-                             <strong>Manasi Sharma</strong>,
-              <a href="https://sites.google.com/site/appcfdlab">Abhilash J. Chandy</a>
+            Chengshu Li, Cem Gokmen, ...
+            <strong>Manasi Sharma...</strong>,
               <br>
               <em>Conference on Robot Learning (CoRL), 2022</em>
               <br>
                       <a href="/~rahul29/Publications/LES_forced_stratified_turbulence.pdf">Paper link</a>
-        <!-- <a href="data/ipmi2019_slides.pdf">slides</a> -->
+              <!-- <a href="data/ipmi2019_slides.pdf">slides</a> -->
               <p></p>
               <p>We present BEHAVIOR-1K, a comprehensive simulation benchmark for human-centered robotics, motivated by the results of an extensive survey on `what do you want robots to do for you?'. It includes the definition of 1,000 everyday activities, grounded in 50 scenes (houses, gardens, restaurants, offices, etc.) with more than 3,000 objects annotated with physical and semantic properties. It also includes OmniGibson, a novel simulator that supports these activities via realistic physics simulation and rendering of rigid bodies, deformable bodies, and liquids.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+             <img width="90%" src="ijhff.jpg" alt="obj">
+            </td>
+              <br>
+             <td valign="middle" width="75%">
+               <papertitle>Interpreting deep learning models for weak lensing</papertitle>
+
+            <br>
+            Jose Manuel Zorrilla Matilla,
+            <strong>Manasi Sharma</strong>,
+            Daniel Hsu,
+            Zoltan Haiman
+              <br>
+              <em>American Physical Society, PHYSICAL REVIEW D, 2020</em>
+              <br>
+                      <a href="/~rahul29/Publications/LES_forced_stratified_turbulence.pdf">Paper link</a>
+        <!-- <a href="data/ipmi2019_slides.pdf">slides</a> -->
+              <p></p>
+              <p>Deep neural networks (DNNs) are powerful algorithms that have been proven capable of extracting non-Gaussian information from weak lensing (WL) datasets. We apply a series of well-established saliency methods to interpret the DNN and find that the most relevant pixels are those with extreme K values. For noiseless maps, regions with negative K account for 69%-89%. of the attribution of the DNN output, defined as the square of the saliency in input space. In the presence of shape noise, the attribution concentrates in high-convergence regions, with 36%-68% of the attribution in regions with highest 3rd standard deviation of K values. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+             <img width="90%" src="ijhff.jpg" alt="obj">
+            </td>
+              <br>
+             <td valign="middle" width="75%">
+               <papertitle>Palomar Gattini-IR: Survey Overview, Data Processing System, on-Sky Performance and First Results</papertitle>
+
+            <br>
+            Kishalay De, Matthew J. Hankins, ...
+            <strong>Manasi Sharma, ...</strong>,
+              <br>
+              <em>Publications of the Astronomical Society of the Pacific, vol. 132., 2020</em>
+              <br>
+                      <a href="/~rahul29/Publications/LES_forced_stratified_turbulence.pdf">Paper link</a>
+        <!-- <a href="data/ipmi2019_slides.pdf">slides</a> -->
+              <p></p>
+              <p>Palomar Gattini-IR is a new wide-field, near-infrared (NIR) robotic time domain survey operating at Palomar Observatory. Using a 30 cm telescope mounted with a H2RG detector, Gattini-IR achieves a field of view (FOV) of 25 sq. deg. with a pixel scale of 8 7 in J-band. Here, we describe the system design, survey operations, data processing system and on-sky performance of Palomar Gattini-IR. To automatically distinguish between an astrophysical source and image subtraction artifacts, we use a ML based real-bogus (RB) classification scheme. Bogus candidates were compiled using a labeling scheme on Zooniverse, a citizen science web portal which allows set up of individual projects usually pertaining to classification and data visualization. The performance of the model was evaluated using the following metrics: accuracy on the test set of 0.975, a Matthews correlation coefficient of 0.949 and an F1 score of 0.977. </p>
             </td>
           </tr>
 
@@ -175,21 +219,22 @@
                   <p>
                       <ul id="news">
                           <head>
-                            <h3>Nissan-Renault-Mitsubishi: Alliance Innovation Laboratory <a href="https://www.ail-sv.com/"> (AIL-SV) </a> </h3>
-                            <h5>[June 2022 -- Sep 2022]</h5>
+                            <h3> Stanford University, CS231N (Deep Learning for Computer Vision, Prof. Fei-Fei Li)</a> </h3>
+                            <h5>[Mar 2022 -- Jun 2022]</h5>
                           </head>
 
-                          <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using the 'SimpleView' supervised learning algorithm, which projects a 3D point-cloud onto the 6 2D frames and passes it through a CNN (ResNet backbone). </li>
-                          <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
-                          <li> Experimented with a number of architechtures including Graph-based methods like Grid-GCN and point-wise MLP methods like PointNet++, finally settling on the lightweight convolution based method SimpleView. </li>
-                          <li> LiDAR point-cloud classification is exceedingly difficult and I encountered numerous challenges-- I was finally able to improve model performance and speed by sparisfying the network, using saliency-based weight-freezing and training on hard-negative samples. </li>
-                          <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                          <li> Video for car classification linked <a href="demot94.mp4">here</a>. </li>
+                          Graduate Teaching Assistant
+                          <li> Managed weekly 'Discussion Sections' of 75+ students for one of the most popular CS courses at Stanford (>500 students); held office hours, constructed & graded HWs. Received >95% excellent reviews ('Very/Extremely Effective'). </li>
+                          <li> Taught and covered topics such as backpropagation, convolutional neural networks, visual transformers & attention, RNNs, YOLO, object detection, etc. </li>
                           
                           <head>
-                            <h3>Stanford University <a href="https://svl.stanford.edu/"> Stanford Vision Laboratory </a> </h3>
-                            <h5>[Oct 2021 -- present]</h5>
+                            <h3> Columbai University, MATH 1201-1202 (Calculus III and IV)</a> </h3>
+                            <h5>[Mar 2022 -- Jun 2022]</h5>
                           </head>
+
+                          Columbia University, Department of Mathematics
+                          <li> Graded assignments, led weekly office hours, etc., for ~150 students in the undergraduate Calculus III class. Consistently received >80% excellent reviews. </li>
+                          <li> Taught and covered topics such as multiple integrals, Green's theorem, vector calculus, Fourier analysis, etc. </li>
                         </ul>
                     </p>
                 </td>
@@ -208,25 +253,77 @@
                       <ul id="news">
                           <head>
                             <h3>Blog </a> </h3>
-                            <h5>[June 2022 -- Sep 2022]</h5>
+                            <h5>[June 2022 -- present]</h5>
                           </head>
 
-                          <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using the 'SimpleView' supervised learning algorithm, which projects a 3D point-cloud onto the 6 2D frames and passes it through a CNN (ResNet backbone). </li>
-                          <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
-                          <li> Experimented with a number of architechtures including Graph-based methods like Grid-GCN and point-wise MLP methods like PointNet++, finally settling on the lightweight convolution based method SimpleView. </li>
-                          <li> LiDAR point-cloud classification is exceedingly difficult and I encountered numerous challenges-- I was finally able to improve model performance and speed by sparisfying the network, using saliency-based weight-freezing and training on hard-negative samples. </li>
-                          <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                          <li> Video for car classification linked <a href="demot94.mp4">here</a>. </li>
-                          
-                          <head>
-                            <h3>Stanford University <a href="https://svl.stanford.edu/"> Stanford Vision Laboratory </a> </h3>
-                            <h5>[Oct 2021 -- present]</h5>
-                          </head>
+                          <li> In the summer of 2022, I started writing a bi/tri-weekly blog called 'Manasi's Musings' about an array of topics, from my personal journey to my thoughts on LiDAR vs. camera data in AVs to robotic benchmarking, etc. The goal is to cover a sub-topic or question of interest in bite-sized pieces, a maximum 3 min read. The readers are currently mostly friends, colleagues and peers in my network but I hope to reach a wider audience through social media. I started the blog as I missed the process of writing-- I had actually maintained an Astrophysics blog during my high school and early undergraduate program, but stopped due to the commitments of completing my degree. I am so excited to restart, and you can check it out here! __ </li>
                         </ul>
                     </p>
                 </td>
             </tr>
         </table>
+
+
+        <!-- Course Projects -->        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+              <td style="padding: 20px; width: 100% ; vertical-align: middle;">
+                  <!-- <heading>Updates</heading> -->
+                  <head>
+                    <h1>Course Projects</h1>
+                  </head>
+                  <p>
+                      <ul id="news">
+                          <head>
+                            <h3> Crowd Aware Intent-based Reinforcement Learning - CS333 (Algorithms for Interactive Robotics)</a> </h3>
+                            <h5> Winter '22</h5>
+                          </head>
+
+                          <li> Reduced collision rate in crowd navigation by 50% by leveraging human latent intent reinforcement learning (link).</li>
+                          
+
+                          <head>
+                            <h3> Predicting Drug Interactions with Graph Neural Networks - CS224W (Machine Learning with Graphs)</a> </h3>
+                            <h5> Fall '21</h5>
+                          </head>
+
+                          <li> Used the Graph Isomorphism Network to exceed 11th place on ogbl-ddli leaderboard (link, selected for course website).</li>
+                          
+
+                          <head>
+                            <h3> Debiasing Models for Out-of-domain Generalization - CS224N (NLP for Deep Learning)</a> </h3>
+                            <h5> Winter '22</h5>
+                          </head>
+
+                          <li> Exceeded BERT's performance on out-of-domain question-answering data by 2.5% by using debiasing models (link).</li>
+                          
+
+                          <head>
+                            <h3> Optimizing Wind Turbine Placement Subject to Turbine Wakes - CS238 (Decision Making Under Uncertainty)</a> </h3>
+                            <h5> Fall '21</h5>
+                          </head>
+
+                          <li> Applied Q-Learning to windfarms to generate sensible layouts that maximize power, subject to wake constraints (link).</li>
+                          
+
+                          <head>
+                            <h3> LIMES: LIME for Image Segmentation - CS329T (Trustworthy Machine Learning)</a> </h3>
+                            <h5> Spring '22</h5>
+                          </head>
+
+                          <li> Devised a LIME algorithm variant for facial segmentation that achieves explainability like gradient-based methods.</li>
+                          
+
+                          <head>
+                            <h3> Monte-Carlo Tree Search Player - CS227B (General Game Playing)</a> </h3>
+                            <h5> Spring '22</h5>
+                          </head>
+
+                          <li> Designed a player to play any game, using MCTS, multi-threating, grounding, etc.; placed 8th in the class (link).</li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
 
 
       <!-- Honors -->
@@ -235,91 +332,44 @@
             <td style="padding: 20px; width: 100% ; vertical-align: middle;">
                 <!-- <heading>Updates</heading> -->
                 <head>
-                  <h1>Teaching Experience</h1>
+                  <h1>Honors</h1>
                 </head>
                 <p>
                     <ul id="news">
-                        <head>
-                          <h3>Nissan-Renault-Mitsubishi: Alliance Innovation Laboratory <a href="https://www.ail-sv.com/"> (AIL-SV) </a> </h3>
-                          <h5>[June 2022 -- Sep 2022]</h5>
-                        </head>
-
-                        <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using the 'SimpleView' supervised learning algorithm, which projects a 3D point-cloud onto the 6 2D frames and passes it through a CNN (ResNet backbone). </li>
-                        <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
-                        <li> Experimented with a number of architechtures including Graph-based methods like Grid-GCN and point-wise MLP methods like PointNet++, finally settling on the lightweight convolution based method SimpleView. </li>
-                        <li> LiDAR point-cloud classification is exceedingly difficult and I encountered numerous challenges-- I was finally able to improve model performance and speed by sparisfying the network, using saliency-based weight-freezing and training on hard-negative samples. </li>
-                        <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                        <li> Video for car classification linked <a href="demot94.mp4">here</a>. </li>
-                        
-                        <head>
-                          <h3>Stanford University <a href="https://svl.stanford.edu/"> Stanford Vision Laboratory </a> </h3>
-                          <h5>[Oct 2021 -- present]</h5>
-                        </head>
+                        <li> 1 of 18 accepted to the GFSD (Graduate Fellowships for STEM Diversity) Program.                -- Mar '22</li>
+                        <li> 1 of 50 accepted into Google's CS Research Mentorship Program (CSRMP), Class of 2022A.         -- Feb '22</li>
+                        <li> Selected for the final round of the GEM Fellowship.                                            -- Jan '22</li>
+                        <li> Dean's List (in 6 out of 7 graded semesters, awarded to top 20%), Columbia University.         -- Fall '17 - Fall '20</li>
+                        <li> Columbia Undergraduate Research Fellowship (URF), Columbia College Summer Funding Program.     -- May '20</li>
+                        <li> Visiting Undergraduate Research Program (VURP) Award, California Institute of Technology.      -- May '19</li>
+                        <li> 1 of 25 awarded Laidlaw Undergraduate Research & Leadership Scholarship, Columbia University.  -- '18 - '19</li>
+                        <li> Andy Grove Scholarship for Intel Employees' Children, Intel Foundation.                        -- Feb '19</li>
                       </ul>
                   </p>
               </td>
           </tr>
       </table>
 
-
-            <!-- Honors -->
+      <!-- Leadership Roles and Extra-curriculars -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
             <td style="padding: 20px; width: 100% ; vertical-align: middle;">
                 <!-- <heading>Updates</heading> -->
                 <head>
-                  <h1>Teaching Experience</h1>
+                  <h1>Leadership Roles and Extra-curriculars</h1>
                 </head>
                 <p>
                     <ul id="news">
-                        <head>
-                          <h3>Nissan-Renault-Mitsubishi: Alliance Innovation Laboratory <a href="https://www.ail-sv.com/"> (AIL-SV) </a> </h3>
-                          <h5>[June 2022 -- Sep 2022]</h5>
-                        </head>
-
-                        <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using the 'SimpleView' supervised learning algorithm, which projects a 3D point-cloud onto the 6 2D frames and passes it through a CNN (ResNet backbone). </li>
-                        <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
-                        <li> Experimented with a number of architechtures including Graph-based methods like Grid-GCN and point-wise MLP methods like PointNet++, finally settling on the lightweight convolution based method SimpleView. </li>
-                        <li> LiDAR point-cloud classification is exceedingly difficult and I encountered numerous challenges-- I was finally able to improve model performance and speed by sparisfying the network, using saliency-based weight-freezing and training on hard-negative samples. </li>
-                        <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                        <li> Video for car classification linked <a href="demot94.mp4">here</a>. </li>
-                        
-                        <head>
-                          <h3>Stanford University <a href="https://svl.stanford.edu/"> Stanford Vision Laboratory </a> </h3>
-                          <h5>[Oct 2021 -- present]</h5>
-                        </head>
-                      </ul>
-                  </p>
-              </td>
-          </tr>
-      </table>
-
-      <!-- Extra-curriculars -->
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-            <td style="padding: 20px; width: 100% ; vertical-align: middle;">
-                <!-- <heading>Updates</heading> -->
-                <head>
-                  <h1>Teaching Experience</h1>
-                </head>
-                <p>
-                    <ul id="news">
-                        <head>
-                          <h3>Nissan-Renault-Mitsubishi: Alliance Innovation Laboratory <a href="https://www.ail-sv.com/"> (AIL-SV) </a> </h3>
-                          <h5>[June 2022 -- Sep 2022]</h5>
-                        </head>
-
-                        <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using the 'SimpleView' supervised learning algorithm, which projects a 3D point-cloud onto the 6 2D frames and passes it through a CNN (ResNet backbone). </li>
-                        <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
-                        <li> Experimented with a number of architechtures including Graph-based methods like Grid-GCN and point-wise MLP methods like PointNet++, finally settling on the lightweight convolution based method SimpleView. </li>
-                        <li> LiDAR point-cloud classification is exceedingly difficult and I encountered numerous challenges-- I was finally able to improve model performance and speed by sparisfying the network, using saliency-based weight-freezing and training on hard-negative samples. </li>
-                        <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                        <li> Video for car classification linked <a href="demot94.mp4">here</a>. </li>
-                        
-                        <head>
-                          <h3>Stanford University <a href="https://svl.stanford.edu/"> Stanford Vision Laboratory </a> </h3>
-                          <h5>[Oct 2021 -- present]</h5>
-                        </head>
+                      <li> Graduate Community Chair, Women in Computer Science, Stanford University.                      -- Jun '22 - present</li>
+                      <li> Elected as Social Chair for GradSWE.                                                           -- Jun '22</li>
+                      <li> Founder & Project Leader, COVID-19 Public Hub website highlighting Columbia research.          -- Jan '22</li>
+                      <li> Corporate Chair, Women in Computer Science, Columbia University.                               -- Apr '20 - Jun '20</li>
+                      <li> Class 3 Curriculum Developer (AI section), Girls Who Code, Columbia University.                -- Feb '20 - Aug '20</li>
+                      <li> Executive Board UG Student Coordinator, Columbia Society for Women in Physics.                 -- Sep '18 - Sep '19</li>
+                      <li> Captain, 'Columbia Raas' Dance Team (member since Sep 2017), Columbia University.              -- Apr '20 - Jun '21</li>
+                      <li> Crew Captain, New Student Orientation Program, Columbia University.                            -- Aug '20 - Sep '20</li>
+                      <li> Jam Leader, Columbia Design Jam.                                                               -- May '20 - Jul '20</li>
+                      <li> Co-President, 'Symposium in India' Student Club, Columbia University.                          -- Sep '18 - May '19</li>
                       </ul>
                   </p>
               </td>
@@ -332,26 +382,18 @@
             <td style="padding: 20px; width: 100% ; vertical-align: middle;">
                 <!-- <heading>Updates</heading> -->
                 <head>
-                  <h1>Teaching Experience</h1>
+                  <h1>Media</h1>
                 </head>
                 <p>
                     <ul id="news">
-                        <head>
-                          <h3>Nissan-Renault-Mitsubishi: Alliance Innovation Laboratory <a href="https://www.ail-sv.com/"> (AIL-SV) </a> </h3>
-                          <h5>[June 2022 -- Sep 2022]</h5>
-                        </head>
-
-                        <li> Implemented LiDAR point-cloud classification of for Autonomous Systems using the 'SimpleView' supervised learning algorithm, which projects a 3D point-cloud onto the 6 2D frames and passes it through a CNN (ResNet backbone). </li>
-                        <li> The model was able to classify cars, pedestrians, cyclists and vegetation with over 95% accuracy on real-world data and within the 10 Hz LiDAR processor timeframe. </li>
-                        <li> Experimented with a number of architechtures including Graph-based methods like Grid-GCN and point-wise MLP methods like PointNet++, finally settling on the lightweight convolution based method SimpleView. </li>
-                        <li> LiDAR point-cloud classification is exceedingly difficult and I encountered numerous challenges-- I was finally able to improve model performance and speed by sparisfying the network, using saliency-based weight-freezing and training on hard-negative samples. </li>
-                        <li> <b> The model will be deployed in Nissan Autonomous Vehicles beginning October '22.</b> </li>
-                        <li> Video for car classification linked <a href="demot94.mp4">here</a>. </li>
-                        
-                        <head>
-                          <h3>Stanford University <a href="https://svl.stanford.edu/"> Stanford Vision Laboratory </a> </h3>
-                          <h5>[Oct 2021 -- present]</h5>
-                        </head>
+                      <li> 1 of 18 accepted to the GFSD (Graduate Fellowships for STEM Diversity) Program.                -- Mar '22</li>
+                      <li> 1 of 50 accepted into Google's CS Research Mentorship Program (CSRMP), Class of 2022A.         -- Feb '22</li>
+                      <li> Selected for the final round of the GEM Fellowship.                                            -- Jan '22</li>
+                      <li> Dean's List (in 6 out of 7 graded semesters, awarded to top 20%), Columbia University.         -- Fall '17 - Fall '20</li>
+                      <li> Columbia Undergraduate Research Fellowship (URF), Columbia College Summer Funding Program.     -- May '20</li>
+                      <li> Visiting Undergraduate Research Program (VURP) Award, California Institute of Technology.      -- May '19</li>
+                      <li> 1 of 25 awarded Laidlaw Undergraduate Research & Leadership Scholarship, Columbia University.  -- '18 - '19</li>
+                      <li> Andy Grove Scholarship for Intel Employees' Children, Intel Foundation.                        -- Feb '19</li>
                       </ul>
                   </p>
               </td>
