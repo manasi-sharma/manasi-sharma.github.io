@@ -185,7 +185,22 @@ section > h2 {
 /* Work Experience */
 
 .work-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
   margin-bottom: 1.8rem;
+}
+
+.work-item > img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.work-content {
+  flex: 1;
 }
 
 .work-header {
@@ -461,6 +476,11 @@ section > h2 {
   .community-item {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .work-item {
+    flex-direction: column;
     gap: 0.8rem;
   }
 
