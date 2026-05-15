@@ -147,6 +147,7 @@ section > h2 {
 .news-content {
   flex: 1;
   color: var(--color-text-secondary);
+  display: block;
 }
 
 .news-content a {
