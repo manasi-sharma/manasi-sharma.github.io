@@ -93,18 +93,18 @@ a:hover {
 }
 
 .contact-links a {
-  color: #1a5276;
+  color: #1a7a6d;
   font-weight: 500;
   padding: 0.35rem 0.75rem;
-  border: 1.5px solid #1a5276;
+  border: 1.5px solid #1a7a6d;
   border-radius: 6px;
   text-decoration: none;
-  background: #d6eaf8;
+  background: #e8f5f2;
   transition: background 0.2s, color 0.2s;
 }
 
 .contact-links a:hover {
-  background: #1a5276;
+  background: #1a7a6d;
   color: #fff;
 }
 
