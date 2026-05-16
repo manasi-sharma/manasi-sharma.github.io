@@ -335,20 +335,19 @@ section > h2 {
   font-weight: 500;
   margin-right: 0.35rem;
   text-decoration: none;
-  color: #fff;
-  transition: opacity 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .pub-links a:hover {
-  opacity: 0.8;
+  opacity: 0.85;
   text-decoration: none;
 }
 
-.pub-links .link-paper { background: #1a7a6d; }
-.pub-links .link-code { background: #444; }
-.pub-links .link-dataset { background: #7b2d8b; }
-.pub-links .link-website { background: #2874a6; }
-.pub-links .link-leaderboard { background: #d4730f; }
+.pub-links .link-paper { color: #2874a6; background: #d6eaf8; border: 1px solid #aed6f1; }
+.pub-links .link-code { color: #6c3483; background: #f4ecf7; border: 1px solid #d7bde2; }
+.pub-links .link-dataset { color: #b9770e; background: #fef9e7; border: 1px solid #f9e79f; }
+.pub-links .link-website { color: #1a7a6d; background: #e8f5f2; border: 1px solid #a3d9cd; }
+.pub-links .link-leaderboard { color: #c0392b; background: #fdedec; border: 1px solid #f5b7b1; }
 
 /* Teaching */
 
