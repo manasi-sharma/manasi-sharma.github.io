@@ -345,9 +345,9 @@ section > h2 {
 
 .pub-links .link-paper { color: #2874a6; background: #d6eaf8; border: 1px solid #aed6f1; }
 .pub-links .link-code { color: #6c3483; background: #f4ecf7; border: 1px solid #d7bde2; }
-.pub-links .link-dataset { color: #b9770e; background: #fef9e7; border: 1px solid #f9e79f; }
-.pub-links .link-website { color: #1a7a6d; background: #e8f5f2; border: 1px solid #a3d9cd; }
-.pub-links .link-leaderboard { color: #c0392b; background: #fdedec; border: 1px solid #f5b7b1; }
+.pub-links .link-dataset { color: #1a5276; background: #eaf2f8; border: 1px solid #b3d4e8; }
+.pub-links .link-website { color: #4a5568; background: #edf2f7; border: 1px solid #cbd5e0; }
+.pub-links .link-leaderboard { color: #4a5568; background: #f0f4f8; border: 1px solid #c8d6e0; }
 
 /* Teaching */
 
